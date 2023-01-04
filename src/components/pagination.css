@@ -1,0 +1,33 @@
+.footerButtons{
+    display: flex;
+    gap: 2.2rem;
+    justify-content: center;
+    align-items: center;
+}
+.footerButtons-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #1890FF;
+    font-weight: bold;
+    color: white;
+   
+}
+
+
+.highlight{
+    background-color: white;
+    color: #1890FF;
+    border-color: #1890FF;
+}
+
+@media screen and (max-width:575px) {
+    .footerButtons{
+        flex-wrap: wrap;
+    }
+}
+

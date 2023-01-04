@@ -1,0 +1,22 @@
+
+.editingModal{
+    width: 365px;
+    /* height: 450px; */
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    padding: 1rem;
+    backface-visibility: hidden;
+}
+
+
+@media screen and (max-width:403px) {
+    .editingModal{
+        top: 20%;
+    }
+}

@@ -1,0 +1,43 @@
+input[type="checkbox"]{
+    width:18px
+}
+
+.displaydata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0,0,0,.50);
+    /* margin-bottom: 10px; */
+    padding-top: 20px;
+    flex-grow: 1;
+    gap: 1rem;
+
+}
+.flex-items{
+    display: flex;
+    word-break: break-all;
+    flex: 1;
+}
+.flex-items:first-child{
+    justify-content: center;
+}
+.flex-items:last-child{
+    align-items: center;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+
+
+/* fontawesome icons */
+.fa-trash{
+    color: red;
+    margin-left: 15px;
+}
+
+
+.selected_background{
+    background-color: rgb(207 207 207 / 53%);
+}

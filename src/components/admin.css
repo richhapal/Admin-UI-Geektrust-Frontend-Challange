@@ -1,0 +1,31 @@
+.footer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.flex-item:last-child{
+    flex: 1;
+}
+
+
+.footer button{
+    background: #FF5171;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* #FF5171 */
+
+@media screen and (max-width:826px) {
+        .footer{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            gap: .8rem;
+        }
+}

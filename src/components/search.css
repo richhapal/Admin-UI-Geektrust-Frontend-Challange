@@ -1,0 +1,16 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.search .input-group  .form-control{
+
+    height: 45px;
+
+}
+
+.search .button {
+    height: 34px;
+    padding: 5px;
+}
