@@ -44,7 +44,6 @@ function DisplayData(props){
     useEffect(()=>{
         if(props.allSelected && !isHeadding){   // all true but not heading
             props.setSelectedList((old)=>[...old,props.id])
-            console.log("----------calling again----------------")
         }
         else if(!props.allSelected && !isHeadding){
             let filterSelectdList=props.selectedList.filter((value)=>value!=props.id)
@@ -92,7 +91,6 @@ function DisplayData(props){
         //Updating AllChecked to false
         if(grandParentId=="heading" && !e.target.checked){
             setAllSelected(false);
-            console.log("-----------PROPS-----",props.selectedList)
             
                 for(let i=0;i<props.selectedList.length;i++){
                     let elem=document.getElementById(props.selectedList[i]);

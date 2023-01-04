@@ -23,7 +23,6 @@ function Pagination(props){
             props.updateDisplayEmployee(props.list.slice(0,10));
             // highlighting current active  page 
             const showEmp=props.list.slice(currentPage*10-10,currentPage*10);   
-            console.log("Props List in Pagination",currentPage,showEmp.length,showEmp)
             props.updateDisplayEmployee(showEmp); 
 
             let elem=document.getElementsByClassName("pageButtons");
@@ -50,26 +49,27 @@ function Pagination(props){
         props.setSelectedList([])
         props.setCurrentPage(currentPage)
 
+
         if(totalPage.length!=0){
             const elemLeft=document.getElementsByClassName('leftButton');
             const elemRight=document.getElementsByClassName('rightButton');
             const len=totalPage.length;
             if(currentPage==totalPage[0]){
-                elemLeft[0].disabled=true;
-                elemLeft[1].disabled=true;
+                elemLeft[0].style.pointerEvents="none";
+                elemLeft[1].style.pointerEvents="none";
 
             }
                 else{
-                elemLeft[0].disabled=false;
-                elemLeft[1].disabled=false;
+                    elemLeft[0].style.pointerEvents="initial";
+                    elemLeft[1].style.pointerEvents="initial";
             }
 
             if(currentPage==totalPage[len-1]){
-                elemRight[0].disabled=true;
-                elemRight[1].disabled=true;
+                elemRight[0].style.pointerEvents="none";
+                elemRight[1].style.pointerEvents="none";
             }else{
-                elemRight[0].disabled=false;
-                elemRight[1].disabled=false;
+                elemRight[0].style.pointerEvents="initial";
+                elemRight[1].style.pointerEvents="initial";
                 }   
         }
 

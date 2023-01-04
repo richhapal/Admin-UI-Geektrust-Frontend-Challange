@@ -71,7 +71,6 @@ function AdminUI (){
       },[currentPage])
 
       useEffect(()=>{
-        console.log("ALL SELECTED ON ADMIN PAGE",allSelected,selectedList,"currentpage",currentPage);
         let heading=document.getElementById('heading').children[0].children[0];
         let lengthToPrintOnPage=employeeList.slice(currentPage*10-10,currentPage*10).length;
         if(selectedList.length>0 && selectedList.length<10){
@@ -124,6 +123,7 @@ function AdminUI (){
 
     return (
         <>
+        
         <Search list={employeeList} setFilterEmployeeList={setFilterEmployeeList} />
         <DisplayData isHeadding={true} name={"Name"} email={"Email"} role={"Role"} action={"Actions"} allSelected={allSelected} setSelectedList={setSelectedList} selectedList={selectedList} setAllSelected={setAllSelected} />
         {

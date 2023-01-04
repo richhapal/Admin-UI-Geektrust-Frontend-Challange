@@ -13,7 +13,6 @@ const Editing=(props)=>{
 
     useEffect(()=>{
         const {id,name,email,role}=props.isEditing;
-       
         setId(id);
         setName(name);
         setEmail(email);
@@ -34,8 +33,9 @@ const Editing=(props)=>{
     }
 
     return(
-        <div className="editingModal">
 
+    <div className="editModalBack">
+        <div className="editingModal">
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="exampleInputName" className="form-label">Name</label>
@@ -55,6 +55,7 @@ const Editing=(props)=>{
             </form>
 
         </div>
+    </div>
     )
 
 
